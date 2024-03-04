@@ -1,0 +1,8 @@
+module Main where
+
+distanceXY x y = if (x - y) < 0 then ((x - y)* (-1)) else (x-y)
+
+main = do
+  let dist = distanceXY 2 52
+  print ("Distancia: " ++ show dist)
+
