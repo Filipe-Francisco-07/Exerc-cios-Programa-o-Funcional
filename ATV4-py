@@ -1,0 +1,10 @@
+def verifyNumberX(x):
+    if x > 0:
+        return "Positivo"
+    elif x == 0:
+        return "Zero"
+    else:
+        return "Negativo"
+if __name__ == "__main__":
+    verificar = verifyNumberX(4)
+    print(f"O numero e: {verificar}")
