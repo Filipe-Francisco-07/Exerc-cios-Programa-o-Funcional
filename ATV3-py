@@ -1,0 +1,5 @@
+def retangAreaBH(b, h):
+  return b * h
+if __name__ == "__main__":
+  area = retangAreaBH(4, 6)
+  print(f"Area retangulo: {area}")
