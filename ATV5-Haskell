@@ -1,0 +1,10 @@
+module Main where
+
+verifyparityX x = if x `mod` 2 == 0 then True else False
+
+main = do
+  let par = verifyparityX 3
+  if(par)
+  print ("O numero e par") 
+  else
+  print ("O numero e impar")
