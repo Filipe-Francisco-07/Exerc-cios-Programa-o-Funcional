@@ -1,0 +1,9 @@
+module Main where
+
+raizq x = (sqrt x)
+
+calcularHipXY x y = raizq (x ^ 2 + y ^ 2)
+
+main = do
+  let hip = calcularHipXY 2 6
+  print ("Hipotenusa de 2 e 6: " ++ show hip)
