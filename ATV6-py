@@ -1,0 +1,14 @@
+import math
+def raizq(x):
+    return math.sqrt(x)
+def quadradoX(x):
+    return x * x
+def calcularX(x):
+    if x % 2 == 0:
+        return raizq(x)
+    else:
+        return quadradoX(x)
+if __name__ == "__main__":
+    calc = calcularX(4)
+    print(f"calculo: {calc}")
+
