@@ -1,0 +1,11 @@
+module Main where
+
+raizq x = (sqrt x)
+
+quadradoX x = x * x
+
+calcularX x = if x `mod` 2 == 0 then raizq x else quadradoX x
+
+main = do
+  let calc = calcularX 4
+  print ("calculo: " ++ show calc)
