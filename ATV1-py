@@ -1,0 +1,5 @@
+def distanceXY(x, y):
+  return (x - y) * (-1) if (x - y) < 0 else (x - y)
+if __name__ == '__main__':
+  dist = distanceXY(2, 52)
+  print(f"Distancia: {dist}")
