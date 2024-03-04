@@ -1,0 +1,7 @@
+module Main where
+
+retangAreaBH b h = b * h
+
+main = do
+  let area = retangAreaBH 4 6
+  print ("Area retangulo: " ++ show area)
