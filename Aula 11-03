@@ -1,11 +1,33 @@
 module Main where
 
 main = do
-  let a = [1, 2, 3, 4]
+  let lista = [1, 2, 3, 4]
   let b = ["a", "b", "c", "d"]
   -- geracao de lista notacao
   let c = [1 .. 10]
   let d = [0.5..100]
   let e = [50,49..1]
 
-  print (a, b, c, d, e)
+  -- funcoes pre-definidas
+  print(head lista)
+  print(tail lista)
+  print(init lista)
+  print(last lista)
+  print(length lista)
+  print(null lista)
+  print(reverse lista)
+  print(maximum lista)
+  print(minimum lista)
+  print(sum lista)
+  print(product lista)
+  print(elem 3 lista)
+  
+  
+
+  print (lista, b, c, d, e)
+  let newlist = [x^2 | x <- lista]
+  print (newlist)
+  let newList2 = [x*2 | x <- newlist, x > 2]
+  print (newList2)
+  let newlist3 = [x*y | x <- [1..10], y <- [10..20]]
+  print (newlist3)
