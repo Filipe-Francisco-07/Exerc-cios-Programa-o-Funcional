@@ -31,3 +31,35 @@ main = do
   print (newList2)
   let newlist3 = [x*y | x <- [1..10], y <- [10..20]]
   print (newlist3)
+
+py
+
+lista = [1, 2, 3, 4]
+b = ["a", "b", "c", "d"]
+# geracao de lista notacao
+c = list(range(1, 11))
+d = list(range(0.5, 100.5))
+e = list(range(50, 0, -1))
+# funcoes pre-definidas
+print(lista[0])
+print(lista[1:])
+print(lista[:-1])
+print(lista[-1])
+print(len(lista))
+print(not lista)
+print(list(reversed(lista)))
+print(max(lista))
+print(min(lista))
+print(sum(lista))
+product_result = 1
+for num in lista:
+    product_result *= num
+print(product_result)
+print(3 in lista)
+print(lista, b, c, d, e)
+newlist = [x**2 for x in lista]
+print(newlist)
+newList2 = [x*2 for x in newlist if x > 2]
+print(newList2)
+newlist3 = [x*y for x in range(1, 11) for y in range(10, 21)]
+print(newlist3)
