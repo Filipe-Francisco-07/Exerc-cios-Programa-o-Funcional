@@ -1,0 +1,11 @@
+module Main where
+
+main = do
+  let a = [1, 2, 3, 4]
+  let b = ["a", "b", "c", "d"]
+  -- geracao de lista notacao
+  let c = [1 .. 10]
+  let d = [0.5..100]
+  let e = [50,49..1]
+
+  print (a, b, c, d, e)
