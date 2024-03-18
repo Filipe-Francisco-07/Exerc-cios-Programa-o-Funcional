@@ -8,10 +8,26 @@ media n1 n2
 
 somamultiplicaXY x y = (x + y , x*y)
 
+soma 1 = 1 
+
+soma n = n + soma(n-1)
+
+
+somaLista [] =  0
+somaLista (x:xs) = x +somaLista xs
+
+
 main = do
 
   let med = media 7 5
   let somamult = somamultiplicaXY 2 3
-  print((med)++show(somamult))
+  let somadoida = soma 10
+  
+  let lista = [5,0,10]
+  
+  print("lista soma: "++show (somaLista lista))
+  
+  print ("Média: "++show(med)," Mult"++show(somamult)," Soma doida: "++show(somadoida)) 
+
 
   
