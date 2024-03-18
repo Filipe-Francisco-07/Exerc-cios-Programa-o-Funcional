@@ -1,0 +1,17 @@
+
+
+media n1 n2
+  |n>= 7 = "aprovado"
+  |n <= 3 = "reprovado"
+  |otherwise = "exame"
+  where n = (n1+n2)/ 2
+
+somamultiplicaXY x y = (x + y , x*y)
+
+main = do
+
+  let med = media 7 5
+  let somamult = somamultiplicaXY 2 3
+  print((med)++show(somamult))
+
+  
