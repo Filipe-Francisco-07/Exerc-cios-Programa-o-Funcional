@@ -1,5 +1,4 @@
 
-
 media n1 n2
   |n>= 7 = "aprovado"
   |n <= 3 = "reprovado"
@@ -16,6 +15,8 @@ soma n = n + soma(n-1)
 somaLista [] =  0
 somaLista (x:xs) = x +somaLista xs
 
+somaLista2 lsita = foldr (+) 0 lista
+
 
 main = do
 
@@ -29,5 +30,7 @@ main = do
   
   print ("Média: "++show(med)," Mult"++show(somamult)," Soma doida: "++show(somadoida)) 
 
+
+  
 
   
